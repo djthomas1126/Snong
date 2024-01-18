@@ -3,3 +3,4 @@ The goal of this project is to try to create this game in several different lang
 
 1st attempt: Python
 - Using Pygame
+- Pong code derived from https://www.geeksforgeeks.org/create-a-pong-game-in-python-pygame/#
