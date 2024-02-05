@@ -38,12 +38,11 @@ class Ball:
         w = self.window.get_width()
         h = self.window.get_height()
         
-        self.posx = w//2
-        self.posy = h//2
+        self.posx = w//2 - self.width/2
+        self.posy = h//2 - self.height/2
         self.x_dir = random.choice([-1, 1])
         self.y_dir = random.choice([-1, 1])
         self.rect = pygame.Rect(self.posx, self.posy, self.width, self.height)
-        time.sleep(2)
 
     def getRect(self):
         return self.rect
@@ -74,7 +73,7 @@ class Paddle:
 
     def reset(self):
         h = self.window.get_height()
-        self.posy = h//2
+        self.posy = h/2 - self.height/2
         self.rect = pygame.Rect(self.posx, self.posy, self.width, self.height)
 
     def getRect(self):

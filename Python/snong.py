@@ -2,6 +2,7 @@
 
 import pygame
 from objects import Ball, Paddle, Snake
+import time
 
 pygame.init()
 
